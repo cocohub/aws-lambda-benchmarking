@@ -36,9 +36,7 @@ language|url
 
 Example: python|https://q8d5irm342.execute-api.us-east-1.amazonaws.com/dev/hello
 Reason is, the automated test will print the language and then run URL with Artillery to do benchmarks.
-
-To do the test, run test.bat with two integer arguments, the first is amount of executions and second is amount of people.
-test.bat 10 10 would simulate 10 people executing each lambda function 10 times.
+<br>
 
 <h2>Create a service:</h2>
 serverless create --template TEMPLATENAME --path NAMEOFDIR
@@ -61,3 +59,8 @@ serverless invoke -f FUNCTIONNAME (usually it's hello)
 cd SERVICENAME (you must be in the service folder)
 serverless invoke -f FUNCTIONNAME (usually it's hello)
 <hr>
+
+<h1>BENCHMARKING</h1>
+<h2>Run</h2>
+Run test.bat with two integer arguments, the first is amount of executions and second is amount of people.
+test.bat 10 10 would simulate 10 people executing each lambda function 10 times.
