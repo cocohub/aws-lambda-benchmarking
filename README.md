@@ -62,5 +62,5 @@ This will deploy the service to AWS
 
 <h1>BENCHMARKING</h1>
 <h2>Run</h2>
-Run test.bat with two integer arguments, the first is amount of executions and second is amount of people.
+Run test.bat with two integer arguments, the first is amount of executions and second is amount of people.<br>
 <code>test.bat 10 10</code> would simulate 10 people executing each lambda function 10 times.
