@@ -45,6 +45,7 @@ This will create a service in the directory NAMEOFDIR in your current working di
 
 <h2>Deploy the service:</h2>
 <code>cd SERVICENAME</code> (you must be in the service folder)
+<br>
 <code>serverless deploy</code>
 
 This will deploy the service to AWS
@@ -52,11 +53,13 @@ This will deploy the service to AWS
 
 <h2>Run the function on AWS</h2>
 <code>cd SERVICENAME</code> (you must be in the service folder)
+<br>
 <code>serverless invoke -f FUNCTIONNAME</code> (usually it's hello)
 <hr>
 
 <h2>Run the function locally</h2>
 <code>cd SERVICENAME</code> (you must be in the service folder)
+<br>
 <code>serverless invoke local -f FUNCTIONNAME</code> (usually it's hello)
 <hr>
 
