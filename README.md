@@ -16,10 +16,10 @@ Remember that you need to have the core of those languages installed, otherwise 
 
 To be able to call a function through the API, your serverless.yml additionally needs the last parts betwen stars (*this*):
 <code>functions:</code><br>
-  &nbsp;<code>hello:</code><br>
-    &nbsp;&nbsp;<code>handler: handler.hello</code><br>
-    &nbsp;<code>*events:</code><br>
-        &nbsp;&nbsp;<code>- http: GET hello*</code>
+  &emsp;<code>hello:</code><br>
+    &emsp;&emsp;<code>handler: handler.hello</code><br>
+    &emsp;<code>*events:</code><br>
+        &emsp;&emsp;<code>- http: GET hello*</code>
         
 Once you deploy your function, the url to your function will be printed in the console.
 Put it in links.txt to use it in the test suite. Use following format:
