@@ -4,7 +4,8 @@
 npm install -g serverless
 
 You need to have an AWS account, get it and then set up your credentials (you will need these for the Serverless Framework)
-https://serverless.com/framework/docs/providers/aws/guide/credentials/<br>
+https://serverless.com/framework/docs/providers/aws/guide/credentials/
+<br>
 https://www.youtube.com/watch?v=KngM5bfpttA
 
 <h2>Create your first service</h2>
@@ -24,10 +25,9 @@ Once you deploy your function, the url to your function will be printed in the c
 Put it in links.txt to use it in the test suite. Use following format:
 language|url
 Example: python|https://blabla.aws.com/
-____________________________________
+<hr>
 
-<h1>FRAMEWORK HELP<h1>
-
+<h1>FRAMEWORK HELP</h1>
 Open the command line in the project root folder.
 
 All services are located in folders.
@@ -43,21 +43,21 @@ test.bat 10 10 would simulate 10 people executing each lambda function 10 times.
 <h2>Create a service:</h2>
 serverless create --template TEMPLATENAME --path NAMEOFDIR
 This will create a service in the directory NAMEOFDIR in your current working directory
-____________________________________
+<hr>
 
 <h2>Deploy the service:</h2>
 cd SERVICENAME (you must be in the service folder)
 serverless deploy
 
 This will deploy the service to AWS
-____________________________________
+<hr>
 
 <h2>Run the function on AWS</h2>
 cd SERVICENAME (you must be in the service folder)
 serverless invoke -f FUNCTIONNAME (usually it's hello)
-____________________________________
+<hr>
 
 <h2>Run the function locally</h2>
 cd SERVICENAME (you must be in the service folder)
 serverless invoke -f FUNCTIONNAME (usually it's hello)
-____________________________________
+<hr>
