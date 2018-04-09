@@ -1,7 +1,7 @@
 <h1>SETUP</h1>
 
 <h2>Install Serverless Framework</h2>
-npm install -g serverless
+<code>npm install -g serverless</code>
 
 You need to have an AWS account, get it and then set up your credentials (you will need these for the Serverless Framework)
 https://serverless.com/framework/docs/providers/aws/guide/credentials/
@@ -15,11 +15,11 @@ Or simply use those in the repo, just deploy them to your AWS account and invoke
 Remember that you need to have the core of those languages installed, otherwise you can't compile them.
 
 To be able to call a function through the API, your serverless.yml additionally needs the last parts betwen stars (*this*):
-functions:
+<code>functions:
   hello:
     handler: handler.hello
     *events:
-        - http: GET hello*
+        - http: GET hello*</code>
         
 Once you deploy your function, the url to your function will be printed in the console.
 Put it in links.txt to use it in the test suite. Use following format:
@@ -39,28 +39,28 @@ Reason is, the automated test will print the language and then run URL with Arti
 <br>
 
 <h2>Create a service:</h2>
-serverless create --template TEMPLATENAME --path NAMEOFDIR
+<code>serverless create --template TEMPLATENAME --path NAMEOFDIR</code>
 This will create a service in the directory NAMEOFDIR in your current working directory
 <hr>
 
 <h2>Deploy the service:</h2>
-cd SERVICENAME (you must be in the service folder)
-serverless deploy
+<code>cd SERVICENAME</code> (you must be in the service folder)
+<code>serverless deploy</code>
 
 This will deploy the service to AWS
 <hr>
 
 <h2>Run the function on AWS</h2>
-cd SERVICENAME (you must be in the service folder)
-serverless invoke -f FUNCTIONNAME (usually it's hello)
+<code>cd SERVICENAME</code> (you must be in the service folder)
+<code>serverless invoke -f FUNCTIONNAME</code> (usually it's hello)
 <hr>
 
 <h2>Run the function locally</h2>
-cd SERVICENAME (you must be in the service folder)
-serverless invoke -f FUNCTIONNAME (usually it's hello)
+<code>cd SERVICENAME</code> (you must be in the service folder)
+<code>serverless invoke local -f FUNCTIONNAME</code> (usually it's hello)
 <hr>
 
 <h1>BENCHMARKING</h1>
 <h2>Run</h2>
 Run test.bat with two integer arguments, the first is amount of executions and second is amount of people.
-test.bat 10 10 would simulate 10 people executing each lambda function 10 times.
+<code>test.bat 10 10</code> would simulate 10 people executing each lambda function 10 times.
