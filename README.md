@@ -1,13 +1,13 @@
-SETUP
+<h1>SETUP</h1>
 
-Install Serverless Framework
+<h2>Install Serverless Framework</h2>
 npm install -g serverless
 
 You need to have an AWS account, get it and then set up your credentials (you will need these for the Serverless Framework)
-https://serverless.com/framework/docs/providers/aws/guide/credentials/
+https://serverless.com/framework/docs/providers/aws/guide/credentials/<br>
 https://www.youtube.com/watch?v=KngM5bfpttA
 
-Create your first service
+<h2>Create your first service</h2>
 https://serverless.com/framework/docs/providers/aws/guide/quick-start/
 
 Or simply use those in the repo, just deploy them to your AWS account and invoke them.
@@ -26,7 +26,7 @@ language|url
 Example: python|https://blabla.aws.com/
 ____________________________________
 
-FRAMEWORK HELP
+<h1>FRAMEWORK HELP<h1>
 
 Open the command line in the project root folder.
 
@@ -40,26 +40,24 @@ Reason is, the automated test will print the language and then run URL with Arti
 To do the test, run test.bat with two integer arguments, the first is amount of executions and second is amount of people.
 test.bat 10 10 would simulate 10 people executing each lambda function 10 times.
 
-SERVERLESS HELP
-
-Create a service:
+<h2>Create a service:</h2>
 serverless create --template TEMPLATENAME --path NAMEOFDIR
 This will create a service in the directory NAMEOFDIR in your current working directory
 ____________________________________
 
-Deploy the service:
+<h2>Deploy the service:</h2>
 cd SERVICENAME (you must be in the service folder)
 serverless deploy
 
 This will deploy the service to AWS
 ____________________________________
 
-Run the function on AWS
+<h2>Run the function on AWS</h2>
 cd SERVICENAME (you must be in the service folder)
 serverless invoke -f FUNCTIONNAME (usually it's hello)
 ____________________________________
 
-Run the function locally
+<h2>Run the function locally</h2>
 cd SERVICENAME (you must be in the service folder)
 serverless invoke -f FUNCTIONNAME (usually it's hello)
 ____________________________________
