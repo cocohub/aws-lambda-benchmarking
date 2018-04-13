@@ -5,7 +5,7 @@ def createCommand(xExecutions, xPeople, url):
     return "artillery quick --count %s -n %s %s" % (xExecutions, xPeople, url)
 
 #file containing the language and url separated by "|"
-fileLinks = "links.txt"
+fileLinks = "sortlinks.txt"
 
 #amount of executions and people executing
 xExecutions = sys.argv[1]
