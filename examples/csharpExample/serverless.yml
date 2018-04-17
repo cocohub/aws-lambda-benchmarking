@@ -20,6 +20,7 @@ service: csharpExample
 provider:
   name: aws
   runtime: dotnetcore1.0
+  memorySize: ${opt:memory}
 
 # you can overwrite defaults here
 #  stage: dev

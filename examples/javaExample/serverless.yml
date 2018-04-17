@@ -20,6 +20,7 @@ service: javaExample
 provider:
   name: aws
   runtime: java8
+  memorySize: ${opt:memory}
 
 # you can overwrite defaults here
 #  stage: dev

@@ -20,6 +20,7 @@ service: pythonExample
 provider:
   name: aws
   runtime: python2.7
+  memorySize: ${opt:memory}
 
 # you can overwrite defaults here
 #  stage: dev
