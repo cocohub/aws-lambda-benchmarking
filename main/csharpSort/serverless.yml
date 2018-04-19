@@ -1,0 +1,18 @@
+service: csharpSort
+
+provider:
+  name: aws
+  runtime: dotnetcore1.0
+  memorySize: ${env:FUNC_MEMORY}
+
+package:
+  artifact: artifact/package.zip
+
+functions:
+  hello:
+    handler: CsharpHandlers::AwsDotnetCsharp.Handler::Hello
+    events:
+        - http:
+            path: hello
+            method: GET
+            cors: true
