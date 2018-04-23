@@ -1,4 +1,4 @@
-python|https://q8d5irm342.execute-api.us-east-1.amazonaws.com/dev/hello
-nodejs|https://mqwbs1pfig.execute-api.us-east-1.amazonaws.com/dev/hello
-java|https://i7s7pnjv6j.execute-api.us-east-1.amazonaws.com/dev/hello
-c#|https://3tejkriam5.execute-api.us-east-1.amazonaws.com/dev/hello
+nodejs|https://lpfsgzaeg6.execute-api.us-east-1.amazonaws.com/dev/hello
+python|https://leczhu11tf.execute-api.us-east-1.amazonaws.com/dev/hello
+java|https://pss8dqdqjc.execute-api.us-east-1.amazonaws.com/dev/hello
+c#|https://5ls7c6fb3j.execute-api.us-east-1.amazonaws.com/dev/hello
