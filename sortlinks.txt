@@ -1,4 +1,0 @@
-nodejs|https://lpfsgzaeg6.execute-api.us-east-1.amazonaws.com/dev/hello
-python|https://leczhu11tf.execute-api.us-east-1.amazonaws.com/dev/hello
-java|https://677olumqdc.execute-api.us-east-1.amazonaws.com/dev/hello
-c#|https://5ls7c6fb3j.execute-api.us-east-1.amazonaws.com/dev/hello
