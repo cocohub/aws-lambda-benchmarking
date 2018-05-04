@@ -4,6 +4,7 @@ provider:
   name: aws
   runtime: dotnetcore1.0
   memorySize: ${env:FUNC_MEMORY}
+  timeout: ${env:FUNC_TIMEOUT}
 
 package:
   artifact: artifact/package.zip
@@ -16,3 +17,5 @@ functions:
             path: hello
             method: GET
             cors: true
+        - cloudwatchLog:
+            filter: ${env:FUNC_FILTER}

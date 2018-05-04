@@ -1,13 +1,15 @@
 service: pythonSort
 
-
 provider:
   name: aws
   runtime: python2.7
   memorySize: ${env:FUNC_MEMORY}
+  timeout: ${env:FUNC_TIMEOUT}
 
 functions:
   hello:
     handler: handler.hello
     events:
         - http: GET hello
+        - cloudwatchLog:
+            filter: ${env:FUNC_FILTER}
