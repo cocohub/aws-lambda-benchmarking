@@ -18,4 +18,5 @@ functions:
             method: GET
             cors: true
         - cloudwatchLog:
+            logGroup: /csharpSort
             filter: ${env:FUNC_FILTER}

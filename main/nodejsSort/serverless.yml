@@ -12,4 +12,5 @@ functions:
     events:
         - http: GET hello
         - cloudwatchLog:
+            logGroup: /nodejsSort
             filter: ${env:FUNC_FILTER}

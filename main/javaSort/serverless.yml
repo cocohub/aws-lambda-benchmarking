@@ -15,4 +15,5 @@ functions:
     events:
         - http: GET hello
         - cloudwatchLog:
+            logGroup: /javaSort
             filter: ${env:FUNC_FILTER}
