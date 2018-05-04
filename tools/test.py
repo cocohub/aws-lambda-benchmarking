@@ -29,7 +29,8 @@ with open(fileLinks) as f:
         url = line.split("|")[1]
         time = datetime.datetime.now().strftime("%Y-%m-%d-%I:%M:%S")
         #output = "-o %s%s" % (language,time + ".json")
-        output = "-o %s" % (language + ".json")
+        #output = "-o %s" % (language + ".json")
+        output = ""
         
         print("*** TESTING %s ***" % (language.upper()))
         os.system(createCommand(xExecutions,xPeople, output, url))
