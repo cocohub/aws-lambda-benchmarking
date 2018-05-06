@@ -13,6 +13,10 @@ xPeople = sys.argv[2]
 arraySize = sys.argv[3]
 maxExecutions = 1000
 
+if xExecutions == "" or xPeople == "" or arraySize == "":
+    print("You need to enter 3 parameters fool; number of executions, number of people executing and size of array")
+    sys.exit(0)
+
 #if we have too many executions, cancel script to save executions
 if int(xExecutions) * int(xPeople) >= maxExecutions:
     print("*** ERROR ***")
