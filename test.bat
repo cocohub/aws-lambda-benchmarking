@@ -1,1 +1,1 @@
-python tools/test.py %1 %2
+python tools/test.py %1 %2 %3
