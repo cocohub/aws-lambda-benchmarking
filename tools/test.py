@@ -10,6 +10,7 @@ fileLinks = "links.txt"
 #amount of executions and people executing
 xExecutions = sys.argv[1]
 xPeople = sys.argv[2]
+arraySize = sys.argv[3]
 maxExecutions = 1000
 
 #if we have too many executions, cancel script to save executions
@@ -26,8 +27,11 @@ else:
 with open(fileLinks) as f:
     for line in f:
         language = line.split("|")[0]
-        url = line.split("|")[1]
-        time = datetime.datetime.now().strftime("%Y-%m-%d-%I:%M:%S")
+        url = line.split("|")[1] + "?arraySize=" + arraySize
+        
+        print(url)
+        
+        #time = datetime.datetime.now().strftime("%Y-%m-%d-%I:%M:%S")
         #output = "-o %s%s" % (language,time + ".json")
         #output = "-o %s" % (language + ".json")
         output = ""
