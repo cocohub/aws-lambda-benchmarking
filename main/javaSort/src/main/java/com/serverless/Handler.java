@@ -21,6 +21,8 @@ public class Handler implements RequestHandler<Map<String, Object>, ApiGatewayRe
         
         int max = 10;
         
+        //weird implementation because it goes from map to an object which you can do nothing to
+        //except converting it to a string and then extracting what we want
         max = Integer.parseInt(input.get("queryStringParameters").toString().split("=")[1].replace("}", ""));
         
         int[] array = new int[max];
@@ -32,7 +34,7 @@ public class Handler implements RequestHandler<Map<String, Object>, ApiGatewayRe
         Arrays.sort(array);
 
 		LOG.info("received: " + input);
-		Response responseBody = new Response(Arrays.toString(array), input);
+		Response responseBody = new Response(myOutput/*Arrays.toString(array)*/, input);
 		return ApiGatewayResponse.builder()
 				.setStatusCode(200)
 				.setObjectBody(responseBody)
