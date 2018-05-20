@@ -1,0 +1,1 @@
+python tools/testexecutions.py %1 %2 %3

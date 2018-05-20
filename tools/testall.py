@@ -2,7 +2,10 @@ import sys, os, datetime
 
 #creates the system command to execute artillery benchmarks
 def createCommand(xExecutions, xPeople, extras, url):
-    return "artillery quick --count %s -n %s %s %s" % (xExecutions, xPeople, extras, url)
+    #return "artillery quick --count %s -n %s %s %s" % (xExecutions, xPeople, extras, url)
+    #return "artillery quick --duration %s --rate %s -n %s" (xExecutions, xPeople, extras, url)
+    return "artillery quick -d 60 -r 1 -n 1 " + url
+    
 
 #file containing the language and url separated by "|"
 fileLinks = "links.txt"
@@ -31,7 +34,7 @@ else:
 with open(fileLinks) as f:
     for line in f:
         language = line.split("|")[0]
-        url = line.split("|")[1] + "?arraySize=" + arraySize
+        url = line.split("|")[1].rstrip() + "?arraySize=" + arraySize
         
         print(url)
         
