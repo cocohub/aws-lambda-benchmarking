@@ -22,6 +22,7 @@ The tools are written in <a target="blank" href="https://www.python.org/download
 After creating your AWS account and setting up the Serverless Framework, make sure you have an environment variable called "FUNC_MEMORY".
 You can set this from 128 up to 3008. It has to be in 64MB increments.
 Once you have the environment variable set up, run deploy.bat to deploy the original functions in the "main" folder.
+<br><br>
 Make sure to include your function invocation URLs in tools/testexecutions.py, these will be printed out when you deploy.
 The URLs and more information about your functions can be found on https://platform.serverless.com/
 <br>
