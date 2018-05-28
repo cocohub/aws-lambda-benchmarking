@@ -52,7 +52,7 @@ https://serverless.com/framework/docs/providers/aws/guide/quick-start/
 <hr>
 
 <h2>Deploy the service:</h2>
-<code>cd SERVICENAME</code> (you must be in the service folder)
+<code>cd SERVICENAME</code> (you must go to the service folder)
 <br>
 <code>serverless deploy</code>
 
@@ -67,13 +67,13 @@ https://blablabla.execute-api.us-east-1.amazonaws.com/dev/hello
 <hr>
 
 <h2>Run the function on AWS</h2>
-<code>cd SERVICENAME</code> (you must be in the service folder)
+<code>cd SERVICENAME</code> (you must go to the service folder)
 <br>
 <code>serverless invoke -f FUNCTIONNAME</code> (usually it's hello)
 <hr>
 
 <h2>Run the function locally</h2>
-<code>cd SERVICENAME</code> (you must be in the service folder)
+<code>cd SERVICENAME</code> (you must go to the service folder)
 <br>
 <code>serverless invoke local -f FUNCTIONNAME</code> (usually it's hello)
 <hr>
