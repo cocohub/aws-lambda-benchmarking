@@ -25,7 +25,7 @@ namespace AwsDotnetCsharp {
             
             return new APIGatewayProxyResponse() {
                 StatusCode = 200, 
-                Body = string.Join(", ", unsorted), 
+                Body = "success"/*string.Join(", ", unsorted)*/, 
             }; 
         }    
     } 
