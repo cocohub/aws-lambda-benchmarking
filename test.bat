@@ -1,1 +1,1 @@
-python tools/testlanguage.py %1 %2 %3
+python tools/testexecutions.py %1 %2 %3
