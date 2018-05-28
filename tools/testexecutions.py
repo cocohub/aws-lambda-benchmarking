@@ -18,7 +18,7 @@ urlEnding = "?arraySize=" + arraySize
 urls = {'java':javaUrl, 'nodejs': nodeUrl, 'python': pythonUrl, 'csharp':csharpUrl}
 
 if executions == "" or arraySize == "" or testLanguage == "":
-    print("You need to enter 4 parameters fool; executions, tests per second, size of array and language to be tested")
+    print("You need to enter 3 parameters; executions, size of array and language to be tested")
     sys.exit(0)
 
 print("*** TESTING %s ***" % (testLanguage.upper()))

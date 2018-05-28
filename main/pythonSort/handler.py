@@ -19,7 +19,7 @@ def hello(event, context):
 
     response = {
         "statusCode": 200,
-        "body": json.dumps(array)
+        "body": "success"#json.dumps(array)
     }
 
     return response
