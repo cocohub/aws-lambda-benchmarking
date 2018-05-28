@@ -56,13 +56,11 @@ https://serverless.com/framework/docs/providers/aws/guide/quick-start/
 
 This will deploy the service to AWS
 
-Once you deploy your service, the url to your function will be printed in the console.
-Put it in links.txt to use it in the test suite. Use following format:
-language|url
-<br>
-Example: python|https://blablabla.execute-api.us-east-1.amazonaws.com/dev/hello
-<br>
-Reason is, the automated test will print the language and then run URL with Artillery to do benchmarks.
+Once you deploy your service, the url to your function will be printed in the console.<br>
+You can also find your function URLs and other information <a target="blank" href="https://platform.serverless.com/">here</a>.
+Put the URL in tools/testexecutions.py to use it in the test suite.<br>
+For example, put the follwoing url for Python in the pythonUrl variable:<br>
+https://blablabla.execute-api.us-east-1.amazonaws.com/dev/hello
 <hr>
 
 <h2>Run the function on AWS</h2>
