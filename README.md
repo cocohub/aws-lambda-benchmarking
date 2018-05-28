@@ -22,6 +22,7 @@ You can set this from 128 up to 3008. It has to be in 64MB increments.
 Once you have the environment variable set up, run deploy.bat to deploy the original functions in the "main" folder.
 Make sure to include your function invocation urls in links.txt, these will be printed out when you deploy.
 The URLs and more information about your functions can be found on https://platform.serverless.com/
+<br>
 If you wish to change starting array size, increment size or array max, do so in tools/fulltest.py.
 
 <h2>Run</h2>
@@ -56,7 +57,9 @@ This will deploy the service to AWS
 Once you deploy your service, the url to your function will be printed in the console.
 Put it in links.txt to use it in the test suite. Use following format:
 language|url
+<br>
 Example: python|https://blablabla.execute-api.us-east-1.amazonaws.com/dev/hello
+<br>
 Reason is, the automated test will print the language and then run URL with Artillery to do benchmarks.
 <hr>
 
