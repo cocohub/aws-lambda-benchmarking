@@ -4,7 +4,7 @@ provider:
   name: aws
   runtime: java8
   memorySize: ${env:FUNC_MEMORY}
-  timeout: ${env:FUNC_TIMEOUT}
+  timeout: 30
 
 package:
   artifact: target/hello-dev.jar  
@@ -14,6 +14,3 @@ functions:
     handler: com.serverless.Handler
     events:
         - http: GET hello
-        - cloudwatchLog:
-            logGroup: /javaSort
-            filter: ${env:FUNC_FILTER}
