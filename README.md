@@ -8,7 +8,10 @@ https://serverless.com/framework/docs/providers/aws/guide/credentials/
 <br>
 https://www.youtube.com/watch?v=KngM5bfpttA
 
-Also for this test to work you need to install <a href="https://artillery.io/">Artillery.io</a>
+Also for this test to work you need to install <a target="blank" href="https://artillery.io/">Artillery.io</a><br>
+<code>npm install -g artillery</code>
+
+The tools are written in <a target="blank" href="https://www.python.org/downloads/">Python</a>, make sure you have that too.
 
 <hr>
 
@@ -23,32 +26,15 @@ Run starttest.bat
 <hr>
 
 <h1>FRAMEWORK HELP</h1>
-<h2>Create your first service</h2>
-https://serverless.com/framework/docs/providers/aws/guide/quick-start/
-
-Or simply use the examples in the repo (check the examples folder), just deploy them to your AWS account and invoke them.
+<h2>Create a service:</h2>
+<code>serverless create --template TEMPLATENAME --path NAMEOFDIR</code>
+Use one of the templates for AWS or choose one of ours in the "example" folder. 
+This will create a service in the directory NAMEOFDIR in your current working directory
 Remember that you need to have the core of those languages installed, otherwise you can't compile them.
 
 All examples are ready to be called through the API Gateway. Just copy the folder and deploy.
-        
-Once you deploy your function, the url to your function will be printed in the console.
-Put it in links.txt to use it in the test suite. Use following format:
-language|url
-Example: python|https://blabla.aws.com/
 
-Open the command line in the project root folder.
-
-All services are located in folders.
-The URLs to execute functions are in links.txt in this format:
-language|url
-
-Example: python|https://blablabla.execute-api.us-east-1.amazonaws.com/dev/hello
-Reason is, the automated test will print the language and then run URL with Artillery to do benchmarks.
-<br>
-
-<h2>Create a service:</h2>
-<code>serverless create --template TEMPLATENAME --path NAMEOFDIR</code>
-This will create a service in the directory NAMEOFDIR in your current working directory
+https://serverless.com/framework/docs/providers/aws/guide/quick-start/
 <hr>
 
 <h2>Deploy the service:</h2>
@@ -57,6 +43,12 @@ This will create a service in the directory NAMEOFDIR in your current working di
 <code>serverless deploy</code>
 
 This will deploy the service to AWS
+
+Once you deploy your service, the url to your function will be printed in the console.
+Put it in links.txt to use it in the test suite. Use following format:
+language|url
+Example: python|https://blablabla.execute-api.us-east-1.amazonaws.com/dev/hello
+Reason is, the automated test will print the language and then run URL with Artillery to do benchmarks.
 <hr>
 
 <h2>Run the function on AWS</h2>
