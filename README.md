@@ -17,12 +17,15 @@ The tools are written in <a target="blank" href="https://www.python.org/download
 
 <h1>BENCHMARKING</h1>
 <h2>Preparation</h2>
-As written before, include your function invocation urls in links.txt.
+After creating your AWS account and setting up the Serverless Framework, make sure you have an environment variable called "FUNC_MEMORY".
+You can set this from 128 up to 3008. It has to be in 64MB increments.
+Once you have the environment variable set up, run deploy.bat to deploy the original functions in the "main" folder.
+Make sure to include your function invocation urls in links.txt, these will be printed out when you deploy.
+The URLs and more information about your functions can be found on https://platform.serverless.com/
 If you wish to change starting array size, increment size or array max, do so in tools/fulltest.py.
 
 <h2>Run</h2>
 Run starttest.bat
-
 <hr>
 
 <h1>FRAMEWORK HELP</h1>
