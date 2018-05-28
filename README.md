@@ -28,6 +28,11 @@ If you wish to change starting array size, increment size or array max, do so in
 Run starttest.bat
 <hr>
 
+<h2>Results</h2>
+Head over to <a target="blank" href="https://console.aws.amazon.com/cloudwatch/">CloudWatch</a>.
+All invocations will be logged. You can either watch the logs or see the results in graphs by creating a dashboard.
+<hr>
+
 <h1>FRAMEWORK HELP</h1>
 <h2>Create a service:</h2>
 <code>serverless create --template TEMPLATENAME --path NAMEOFDIR</code>
