@@ -31,7 +31,7 @@ module.exports.hello = (event, context, callback) => {
       headers: {
         "x-custom-header" : "My Header Value"
       },
-      body: JSON.stringify({ "message": array })
+      body: JSON.stringify({ "message": "success" })
     };
 
   callback(null, response);
