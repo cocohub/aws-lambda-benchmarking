@@ -14,7 +14,7 @@ def cmd(command):
 
 #deploy with serverless framework
 def sls_deploy():
-    cmd("sls deploy")
+    cmd("serverless deploy")
     
 #build then deploy java
 def deployJava():
