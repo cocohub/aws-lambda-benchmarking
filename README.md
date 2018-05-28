@@ -60,6 +60,7 @@ This will deploy the service to AWS
 
 Once you deploy your service, the URLs to your function will be printed in the console.<br>
 You can also find your function URLs and other information <a target="blank" href="https://platform.serverless.com/">here</a>.
+<br>
 Put the URL in tools/testexecutions.py to use it in the test suite.<br>
 For example, put the follwoing URL for Python in the pythonUrl variable:<br>
 https://blablabla.execute-api.us-east-1.amazonaws.com/dev/hello
