@@ -22,7 +22,7 @@ The tools are written in <a target="blank" href="https://www.python.org/download
 After creating your AWS account and setting up the Serverless Framework, make sure you have an environment variable called "FUNC_MEMORY".
 You can set this from 128 up to 3008. It has to be in 64MB increments.
 Once you have the environment variable set up, run deploy.bat to deploy the original functions in the "main" folder.
-Make sure to include your function invocation urls in links.txt, these will be printed out when you deploy.
+Make sure to include your function invocation URLs in tools/testexecutions.py, these will be printed out when you deploy.
 The URLs and more information about your functions can be found on https://platform.serverless.com/
 <br>
 If you wish to change starting array size, increment size or array max, do so in tools/fulltest.py.
@@ -56,10 +56,10 @@ https://serverless.com/framework/docs/providers/aws/guide/quick-start/
 
 This will deploy the service to AWS
 
-Once you deploy your service, the url to your function will be printed in the console.<br>
+Once you deploy your service, the URLs to your function will be printed in the console.<br>
 You can also find your function URLs and other information <a target="blank" href="https://platform.serverless.com/">here</a>.
 Put the URL in tools/testexecutions.py to use it in the test suite.<br>
-For example, put the follwoing url for Python in the pythonUrl variable:<br>
+For example, put the follwoing URL for Python in the pythonUrl variable:<br>
 https://blablabla.execute-api.us-east-1.amazonaws.com/dev/hello
 <hr>
 
