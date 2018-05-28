@@ -34,7 +34,7 @@ public class Handler implements RequestHandler<Map<String, Object>, ApiGatewayRe
         Arrays.sort(array);
 
 		LOG.info("received: " + input);
-		Response responseBody = new Response(myOutput/*Arrays.toString(array)*/, input);
+		Response responseBody = new Response("success"/*Arrays.toString(array)*/, input);
 		return ApiGatewayResponse.builder()
 				.setStatusCode(200)
 				.setObjectBody(responseBody)
