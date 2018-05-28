@@ -10,6 +10,19 @@ https://www.youtube.com/watch?v=KngM5bfpttA
 
 Also for this test to work you need to install <a href="https://artillery.io/">Artillery.io</a>
 
+<hr>
+
+<h1>BENCHMARKING</h1>
+<h2>Preparation</h2>
+As written before, include your function invocation urls in links.txt.
+If you wish to change starting array size, increment size or array max, do so in tools/fulltest.py.
+
+<h2>Run</h2>
+Run starttest.bat
+
+<hr>
+
+<h1>FRAMEWORK HELP</h1>
 <h2>Create your first service</h2>
 https://serverless.com/framework/docs/providers/aws/guide/quick-start/
 
@@ -22,9 +35,7 @@ Once you deploy your function, the url to your function will be printed in the c
 Put it in links.txt to use it in the test suite. Use following format:
 language|url
 Example: python|https://blabla.aws.com/
-<hr>
 
-<h1>FRAMEWORK HELP</h1>
 Open the command line in the project root folder.
 
 All services are located in folders.
@@ -59,11 +70,3 @@ This will deploy the service to AWS
 <br>
 <code>serverless invoke local -f FUNCTIONNAME</code> (usually it's hello)
 <hr>
-
-<h1>BENCHMARKING</h1>
-<h2>Preparation</h2>
-As written before, include your function invocation urls in links.txt.
-If you wish to change starting array size, increment size or array max, do so in tools/fulltest.py.
-
-<h2>Run</h2>
-Run starttest.bat
