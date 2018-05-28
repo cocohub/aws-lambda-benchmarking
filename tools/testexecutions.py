@@ -9,10 +9,12 @@ executions = sys.argv[1]
 arraySize = sys.argv[2]
 testLanguage = sys.argv[3]
 
-javaUrl = "https://pss8dqdqjc.execute-api.us-east-1.amazonaws.com/dev/hello"
-nodeUrl = "https://lpfsgzaeg6.execute-api.us-east-1.amazonaws.com/dev/hello"
-pythonUrl = "https://leczhu11tf.execute-api.us-east-1.amazonaws.com/dev/hello"
-csharpUrl = "https://5ls7c6fb3j.execute-api.us-east-1.amazonaws.com/dev/hello"
+#URL EXAMPLE:
+#https://blabla.execute-api.us-east-1.amazonaws.com/dev/hello
+javaUrl = "URL HERE"
+nodeUrl = "URL HERE"
+pythonUrl = "URL HERE"
+csharpUrl = "URL HERE"
 urlEnding = "?arraySize=" + arraySize
 
 urls = {'java':javaUrl, 'nodejs': nodeUrl, 'python': pythonUrl, 'csharp':csharpUrl}
