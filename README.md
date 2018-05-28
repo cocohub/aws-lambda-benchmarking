@@ -1,3 +1,5 @@
+<i>Disclaimer: this was written to be run in a Windows environment. If you're running this on another OS, just translate the .BAT scripts to whatever scripting language available to you. The tools are written in Python.</i>
+
 <h1>SETUP</h1>
 
 <h2>Install Serverless Framework</h2>
