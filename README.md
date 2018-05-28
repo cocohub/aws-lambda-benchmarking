@@ -8,18 +8,15 @@ https://serverless.com/framework/docs/providers/aws/guide/credentials/
 <br>
 https://www.youtube.com/watch?v=KngM5bfpttA
 
+Also for this test to work you need to install <a href="https://artillery.io/">Artillery.io</a>
+
 <h2>Create your first service</h2>
 https://serverless.com/framework/docs/providers/aws/guide/quick-start/
 
-Or simply use those in the repo, just deploy them to your AWS account and invoke them.
+Or simply use the examples in the repo (check the examples folder), just deploy them to your AWS account and invoke them.
 Remember that you need to have the core of those languages installed, otherwise you can't compile them.
 
-To be able to call a function through the API, your serverless.yml additionally needs the last parts betwen stars (*this*):
-<code>functions:</code><br>
-  &emsp;<code>hello:</code><br>
-    &emsp;&emsp;<code>handler: handler.hello</code><br>
-    &emsp;<code>*events:</code><br>
-        &emsp;&emsp;<code>- http: GET hello*</code>
+All examples are ready to be called through the API Gateway. Just copy the folder and deploy.
         
 Once you deploy your function, the url to your function will be printed in the console.
 Put it in links.txt to use it in the test suite. Use following format:
@@ -34,7 +31,7 @@ All services are located in folders.
 The URLs to execute functions are in links.txt in this format:
 language|url
 
-Example: python|https://q8d5irm342.execute-api.us-east-1.amazonaws.com/dev/hello
+Example: python|https://blablabla.execute-api.us-east-1.amazonaws.com/dev/hello
 Reason is, the automated test will print the language and then run URL with Artillery to do benchmarks.
 <br>
 
@@ -64,6 +61,9 @@ This will deploy the service to AWS
 <hr>
 
 <h1>BENCHMARKING</h1>
+<h2>Preparation</h2>
+As written before, include your function invocation urls in links.txt.
+If you wish to change starting array size, increment size or array max, do so in tools/fulltest.py.
+
 <h2>Run</h2>
-Run test.bat with two integer arguments, the first is amount of executions and second is amount of people.<br>
-<code>test.bat 10 10</code> would simulate 10 people executing each lambda function 10 times.
+Run starttest.bat
